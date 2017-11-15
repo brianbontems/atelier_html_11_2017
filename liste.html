@@ -1,594 +1,665 @@
 <html lang="fren">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans" rel="stylesheet">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <title>Tea Time - Liste produits</title>
-        
-        <style>
-            /* 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <title>Tea Time - Liste produits</title>
+
+    <style>
+        /* 
                 GLOBAL 
             */
-            * {
-                box-sizing: border-box;
-            }
-            html {
-                font-size: 16px;
-            }
-    
-            body {
-                margin: 0;
-                background: #F2F2F2;
-                font-family: 'open sans', sans-serif;
-                font-size: 1rem;
-            }
-            ul li {
-                list-style-type: none;
-            }
-            header, footer {
-                background: #f6d258;
-                color: white; 
-                position: relative;
-            }
-    
-            h2 {
-                font-family: 'Indie FLower';
-                text-transform: uppercase;
-            }
-            container {
-                display: block;
-                margin: 0 3em;
-            }
-    
-            main {
-                background: #F2F2F2;
-            }
-            
-            main section {
-                background: white;
-            }
-    
-            /*
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            margin: 0;
+            background: #F2F2F2;
+            font-family: 'open sans', sans-serif;
+            font-size: 1rem;
+        }
+
+        ul li {
+            list-style-type: none;
+        }
+
+        header,
+        footer {
+            background: #f6d258;
+            color: white;
+            position: relative;
+        }
+
+        h2 {
+            font-family: 'Indie FLower';
+            text-transform: uppercase;
+        }
+
+        container {
+            display: block;
+            margin: 0 3em;
+        }
+
+        main {
+            background: #F2F2F2;
+        }
+
+        main section {
+            background: white;
+        }
+        /*
                 HEADER
             */
+
+        header div {
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header ul {
+            display: flex;
+            text-align: center;
+            flex-flow: row;
+            justify-content: space-between;
+            padding: 1rem 0;
+            flex-basis: 100%;
+            text-transform: uppercase;
+            font-size: .85rem;
+            text-shadow: 0 0 5px rgba(0, 0, 0, .1);
+        }
+
+        header ul li {
+            background: rgba(255, 255, 255, 0);
+            transition: background 400ms ease;
+        }
+
+        header ul li:hover {
+            background: rgba(255, 255, 255, .3);
+            transition: background 200ms ease;
+        }
+
+        .aze i {
+            border-radius: 35px;
+            border: 1px solid rgba(255, 255, 255, .65);
+            color: rgba(255, 255, 255, .65);
+            padding: .5rem;
+            margin-right: .5rem;
+        }
+
+        .header--promo {
+            background: #e0bf42;
+            text-align: center;
+            font-size: .75rem;
+            padding: .25rem;
+        }
+
+        header a img {
+            width: 20rem;
+        }
+
+        header a {
+            text-decoration: none;
+            color: inherit;
+            display: inline-block;
+            padding: 1rem;
+        }
+        /* 
+                MAIN 
+            */
+
+        main {
+            margin: 0 3rem;
+        }
+
+        main section {
+            background: white;
+            margin: 3rem auto;
+            padding: 1rem;
+        }
+
+        main .main-liste--header h1 {
+            border-bottom: 1px solid rgba(176, 144, 103, .3);
+            padding-left: 1rem;
+        }
+
+        main .main-liste--header p {
+            padding-left: 1rem;
+        }
+
+        main .trioElem {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        main .trioElem img {
+            width: 100%;
+        }
+
+        main .trioElem article {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        main .trioElem article a {
+            padding: 1rem;
+            background: #7ada91;
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        main .trioElem article p:nth-child(even) {
+            margin-bottom: 3rem;
+            margin-top: -1rem;
+            font-size: 1.5rem;
+        }
+
+        main .trioElem .list_price {
+            font-family: 'Indie Flower';
+        }
+
+        main .main-liste--header {
+            display: flex;
+            justify-content: stretch;
+            align-items: center;
+        }
+        /* 
+                FOOTER 
+            */
+
+        footer a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        footer section {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        footer section article {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        footer ul.footer--infos {
+            background: #e0bf42;
+            color: rgba(255, 255, 255, .75);
+            display: flex;
+            justify-content: space-around;
+            padding: 2rem 0;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: .75rem;
+        }
+
+        footer ul.footer--infos i {
+            display: block;
+            font-size: 1.5rem;
+            padding-bottom: .5rem;
+        }
+
+        footer ul {
+            padding: 0;
+            color: rgba(255, 255, 255, .75);
+            margin-bottom: 3rem;
+        }
+
+        footer ul li {
+            padding: .15rem;
+        }
+        /* 
+                MEDIA QUERIES 
+            */
+        /* largeur max de 1100px */
+
+        @media (min-width: 1100px) {
+            /* 
+                    GLOBAL 
+                */
+            container {
+                display: block;
+                max-width: 1100px;
+                margin: auto;
+            }
+        }
+        /* TABLETTE > 480px < 768px */
+
+        @media (min-width: 480px) and (max-width: 768px) {
+            /* 
+                    GLOBAL 
+                */
+            container {
+                margin: 0 .5em;
+            }
+
+            /* 
+                  MAIN 
+                */
+            main .main-liste--header img {
+                display: none;
+            }
+            main .trioElem {
+                flex-flow: column;
+            }
+            main .trioElem article {
+                width: 75%;
+                margin: auto;
+            }
+        }
+        /* MOBILE < 480px */
+
+        @media (max-width: 480px) {
+            /* 
+                    GLOBAL 
+                */
+            container {
+                display: block;
+                margin: 0;
+            }
+
+
+            /* 
+                    HEADER 
+                */
+            .aze i {
+                border: 1px solid rgba(255, 255, 255, .65);
+                color: rgba(255, 255, 255, .65);
+            }
+            .aze {
+                border-radius: 0 35px 35px 0;
+                box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+                padding: .5em .75em;
+            }
+
+            header a {
+                align-self: center;
+            }
             header div {
                 display: flex;
-                flex-flow: row;
+                flex-flow: column-reverse;
                 justify-content: space-between;
-                align-items: center;
+                align-items: baseline;
             }
             header ul {
                 display: flex;
                 text-align: center;
-                flex-flow: row;
+                flex-flow: column;
                 justify-content: space-between;
                 padding: 1rem 0;
                 flex-basis: 100%;
-                text-transform: uppercase;
-                font-size: .85rem;
-                text-shadow: 0 0 5px rgba(0,0,0,.1);
+                margin: auto -3rem;
             }
-            header ul li {
-                background: rgba(255,255,255,0);
-                transition: background 400ms ease;
-            }
-            header ul li:hover {
-                background: rgba(255,255,255,.3);
-                transition: background 200ms ease;
-            }
-            .aze i {
-                border-radius: 35px;
-                border: 1px solid rgba(255,255,255,.65);
-                color: rgba(255,255,255,.65);
-                padding: .5rem;
-                margin-right: .5rem;
-            }
-            .header--promo {
-                background: #e0bf42;
-                text-align: center;
-                font-size: .75rem;
-                padding: .25rem;
-            }
-    
-            header a img {
-                width: 20rem;
-            }
-            header a {
-                text-decoration: none;
-                color: inherit;
-                display: inline-block;
-                padding: 1rem;
-            }
-    
-            /* 
-                MAIN 
-            */
-            main {
-                margin: 0 3rem;
-            }
-            main section {
-                background: white;
-                margin: 3rem auto;
-                padding: 1rem;
-    
-            }
-    
-            main .main-liste--header h1 {
-                border-bottom: 1px solid rgba(176,144,103,.3);
-                padding-left: 1rem;
-            }
-            main .main-liste--header p {
-                padding-left: 1rem;
-            }
-    
-            main .trioElem{
-                display: flex;
-                justify-content: space-between;
-            }
-    
-            main .trioElem img {
-                width: 100%;
-            }
-    
-            main .trioElem article {
-                padding: 1rem;
-                text-align: center;
-            }
-            main .trioElem article a {
-                padding: 1rem;
-                background: #7ada91;
-                text-decoration: none;
-                color: white;
-                text-transform: uppercase;
-            }
-    
-            main .trioElem article p:nth-child(even) {
-                margin-bottom: 3rem;
-                margin-top: -1rem;
-                font-size: 1.5rem;
-            }
-            main .trioElem .list_price {
-                font-family: 'Indie Flower';
-            }
-            main .main-liste--header{
-                display: flex; 
-                justify-content: stretch;
-                align-items: center; 
-            }
-    
-            /* 
-                FOOTER 
-            */
-            footer a {
-                text-decoration: none;
-                color: inherit;
-            }
-            footer a:hover {
-                color: white;
-            }
-            footer section {
-                display: flex;
-                justify-content: space-around;
-            }
-            footer section article {
-                text-align: center;
-                padding: 1rem;
-            }
-            footer ul.footer--infos {
-                background: #e0bf42;
-                color: rgba(255,255,255,.75);
-                display: flex;
-                justify-content: space-around;
-                padding: 2rem 0;
-                text-align: center;
-                text-transform: uppercase;
-                font-size: .75rem;
-            }
-            footer ul.footer--infos i {
-                display: block;
-                font-size: 1.5rem;
-                padding-bottom: .5rem;
-            }
-    
-            footer ul {
-                padding: 0;
-                color: rgba(255,255,255,.75);
-                margin-bottom: 3rem;
-            }
-            footer ul li {
-                padding: .15rem;
-            }
-    
-    
-            /* 
-                MEDIA QUERIES 
-            */
-    
-            /* largeur max de 1100px */
-            @media (min-width: 1100px) {
-                /* 
-                    GLOBAL 
-                */
-                container {
-                    display: block;
-                    max-width: 1100px;
-                    margin: auto;
-                }
-            }
-    
-            /* TABLETTE > 480px < 768px */
-            @media (min-width: 480px) and (max-width: 768px) {
-                /* 
-                    GLOBAL 
-                */
-                container {
-                    margin: 0 .5em;
-                }
 
-                /* 
+            /* 
                   MAIN 
                 */
-                main .main-liste--header img {
-                  display: none;
-                }
-                main .trioElem {
-                  flex-flow: column;
-                }
-                main .trioElem article {
-                width: 75%;
-                margin: auto;
-              }
-                
+            main .main-liste--header img {
+                display: none;
             }
-    
-            /* MOBILE < 480px */
-            @media (max-width: 480px) {
-                /* 
-                    GLOBAL 
-                */
-                container {
-                    display: block;
-                    margin: 0;
-                }
+            main .trioElem {
+                flex-flow: column;
+            }
 
-    
-                /* 
-                    HEADER 
-                */
-                .aze i {
-                    border: 1px solid rgba(255,255,255,.65);
-                    color: rgba(255,255,255,.65);
-                }
-                .aze {
-                    border-radius: 0 35px 35px 0;
-                    box-shadow: 0 0 10px rgba(0,0,0,.1);
-                    padding: .5em .75em;
-                }
-    
-                header a {
-                    align-self: center;
-                }
-                header div {
-                    display: flex;
-                    flex-flow: column-reverse;
-                    justify-content: space-between;
-                    align-items: baseline;
-                }
-                header ul {
-                    display: flex;
-                    text-align: center;
-                    flex-flow: column;
-                    justify-content: space-between;
-                    padding: 1rem 0;
-                    flex-basis: 100%;
-                    margin: auto -3rem;
-                }
-
-                /* 
-                  MAIN 
-                */
-                main .main-liste--header img {
-                  display: none;
-                }
-                main .trioElem {
-                  flex-flow: column;
-                }
-
-                /* 
+            /* 
                     FOOTER 
                 */
-                footer > ul {
-                    display: flex;
-                    flex-flow: row;
-                    flex-wrap: wrap;
-                }
-                footer > ul li {
-                    padding: .5rem
-                }
-    
-                footer section {
-                    display: flex;
-                    flex-flow: column;
-                }
+            footer>ul {
+                display: flex;
+                flex-flow: row;
+                flex-wrap: wrap;
             }
-          
-    
-    
-    
-        </style>
-    
-    </head>
-    <body>
-    
-        <header>
-            <p class="header--promo">Livraison offerte à partir de 65€ d'achat !</p>
-            <container>
-                <div>
-                    <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
-                    <span class="aze"><i class="fa fa-shopping-cart" aria-hidden="true"></i>42,00€</span>
-                </div>
-                <ul>
-                    <li><a href="./the.html">Thés</a></li>
-                    <li><a href="./grands_crus.html">Grands Crus</a></li>
-                    <li><a href="">Accessoires</a></li>
-                    <li><a href="">Notre histoire</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </container>
-        </header>
-    
-        <main>
-                <section>
-                  <div class="main-liste--header">
-                    <img src="img/tea/1.jpg" alt="THE NOIR">
-                    <div>
-                      <h1>Thé noir</h1>
-                      <p>Le thé noir, que les chinois thé rouge en référence à la couleur de son infusion, est un thé complétement oxydé. La fabrication du thé noir se fait en cinq étapes: le flétrissage, le roulage, l'oxydation, la torréfaction et le triage. cette opération permet de différencier les différents grades.</p>
-                    </div>
-                  </div>
-                    
-                  <div class="trioElem">
-                    <article>
-                      <h2>Blue of london</h2>
-                      <img src="img/product/product1_big.jpg" alt="THE BLUE LONDON">
-                      <p>A partir de </p>
-                      <p class="list_price">9,00€</p>
-                      <a href="#">Voir ce produit</a>
-                    </article>
-              
-                    <article>
-                      <h2>Thé des lords</h2>
-                      <img src="img/product/product3_big.jpg" alt="THE DES LORDS">
-                      <p>A partir de </p>
-                      <p class="list_price">8,00€</p>
-                      <a href="#">Voir ce produit</a>
-                    </article>
-              
-                    <article>
-                      <h2>Thé des vahinés</h2>
-                      <img src="img/product/product4_big.jpg" alt="THE DES VAHINES">
-                      <p>A partir de </p>
-                      <p class="list_price">9,40€</p>
-                      <a href="#">Voir ce produit</a>
-                    </article>
-                  </div>
-            
-                </section>
-            
-                <section>
-                    <div class="main-liste--header">
-                      <img src="img/tea/2.jpg" alt="THE NOIR">
-                      <div>
-                        <h1>Thé vert</h1>
-                        <p>Le thé noir, que les chinois thé rouge en référence à la couleur de son infusion, est un thé complétement oxydé. La fabrication du thé noir se fait en cinq étapes: le flétrissage, le roulage, l'oxydation, la torréfaction et le triage. cette opération permet de différencier les différents grades.</p>
-                      </div>
-                    </div>
-                      
-                    <div class="trioElem">
-                      <article>
-                        <h2>Thé du hammam</h2>
-                        <img src="img/product/product5_big.jpg" alt="THE BLUE LONDON">
-                        <p>A partir de </p>
-                        <p class="list_price">9,00€</p>
-                        <a href="#">Voir ce produit</a>
-                      </article>
-                
-                      <article>
-                        <h2>Vive le thé !</h2>
-                        <img src="img/product/product6_big.jpg" alt="THE DES LORDS">
-                        <p>A partir de </p>
-                        <p class="list_price">8,00€</p>
-                        <a href="#">Voir ce produit</a>
-                      </article>
-                
-                      <article>
-                        <h2>Thé des alizés</h2>
-                        <img src="img/product/product7_big.jpg" alt="THE DES VAHINES">
-                        <p>A partir de </p>
-                        <p class="list_price">9,40€</p>
-                        <a href="#">Voir ce produit</a>
-                      </article>
-                    </div>
-              
-                  </section>
-          
-                  <section>
-                      <div class="main-liste--header">
-                        <img src="img/tea/3.jpg" alt="THE NOIR">
-                        <div>
-                          <h1>Oolong</h1>
-                          <p>Le thé noir, que les chinois thé rouge en référence à la couleur de son infusion, est un thé complétement oxydé. La fabrication du thé noir se fait en cinq étapes: le flétrissage, le roulage, l'oxydation, la torréfaction et le triage. cette opération permet de différencier les différents grades.</p>
-                        </div>
-                      </div>
-                        
-                      <div class="trioElem">
-                        <article>
-                          <h2>Vive les fêtes</h2>
-                          <img src="img/product/product8_big.jpg" alt="THE BLUE LONDON">
-                          <p>A partir de </p>
-                          <p class="list_price">9,00€</p>
-                          <a href="#">Voir ce produit</a>
-                        </article>
-                  
-                        <article>
-                          <h2>Fleur d'oranger oolong</h2>
-                          <img src="img/product/product9_big.jpg" alt="THE DES LORDS">
-                          <p>A partir de </p>
-                          <p class="list_price">8,00€</p>
-                          <a href="#">Voir ce produit</a>
-                        </article>
-                  
-                        <article>
-                          <h2>Oolong 7 agrumes</h2>
-                          <img src="img/product/product10_big.jpg" alt="THE DES VAHINES">
-                          <p>A partir de </p>
-                          <p class="list_price">9,40€</p>
-                          <a href="#">Voir ce produit</a>
-                        </article>
-                      </div>
-                
-                    </section>
-          
-                    <section>
-                        <div class="main-liste--header">
-                          <img src="img/tea/4.jpg" alt="THE NOIR">
-                          <div>
-                            <h1>Thé blanc</h1>
-                            <p>Le thé noir, que les chinois thé rouge en référence à la couleur de son infusion, est un thé complétement oxydé. La fabrication du thé noir se fait en cinq étapes: le flétrissage, le roulage, l'oxydation, la torréfaction et le triage. cette opération permet de différencier les différents grades.</p>
-                          </div>
-                        </div>
-                          
-                        <div class="trioElem">
-                          <article>
-                            <h2>Thé des songes blancs</h2>
-                            <img src="img/product/product11_big.jpg" alt="THE BLUE LONDON">
-                            <p>A partir de </p>
-                            <p class="list_price">9,00€</p>
-                            <a href="#">Voir ce produit</a>
-                          </article>
-                    
-                          <article>
-                            <h2>Bai mu dan</h2>
-                            <img src="img/product/product12_big.jpg" alt="THE DES LORDS">
-                            <p>A partir de </p>
-                            <p class="list_price">8,00€</p>
-                            <a href="#">Voir ce produit</a>
-                          </article>
-                    
-                          <article>
-                            <h2>Aiguilles d'argent</h2>
-                            <img src="img/product/product13_big.jpg" alt="THE DES VAHINES">
-                            <p>A partir de </p>
-                            <p class="list_price">9,40€</p>
-                            <a href="#">Voir ce produit</a>
-                          </article>
-                        </div>
-                  
-                      </section>
-          
-                      <section>
-                          <div class="main-liste--header">
-                            <img src="img/tea/5.jpg" alt="THE NOIR">
-                            <div>
-                              <h1>Rooibos</h1>
-                              <p>Le thé noir, que les chinois thé rouge en référence à la couleur de son infusion, est un thé complétement oxydé. La fabrication du thé noir se fait en cinq étapes: le flétrissage, le roulage, l'oxydation, la torréfaction et le triage. cette opération permet de différencier les différents grades.</p>
-                            </div>
-                          </div>
-                            
-                          <div class="trioElem">
-                            <article>
-                              <h2>Rooibos à la verveine</h2>
-                              <img src="img/product/product14_big.jpg" alt="THE BLUE LONDON">
-                              <p>A partir de </p>
-                              <p class="list_price">9,00€</p>
-                              <a href="#">Voir ce produit</a>
-                            </article>
-                      
-                            <article>
-                              <h2>Spicy passion</h2>
-                              <img src="img/product/product15_big.jpg" alt="THE DES LORDS">
-                              <p>A partir de </p>
-                              <p class="list_price">8,00€</p>
-                              <a href="#">Voir ce produit</a>
-                            </article>
-                      
-                            <article>
-                              <h2>Rooibos des amants</h2>
-                              <img src="img/product/product16_big.jpg" alt="THE DES VAHINES">
-                              <p>A partir de </p>
-                              <p class="list_price">9,40€</p>
-                              <a href="#">Voir ce produit</a>
-                            </article>
-                          </div>
-                    
-                      </section>
-          
-              </main>
-          
-        
-        <footer>
-            
-            <ul class="footer--infos">
+            footer>ul li {
+                padding: .5rem
+            }
+
+            footer section {
+                display: flex;
+                flex-flow: column;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <p class="header--promo">Livraison offerte à partir de 65€ d'achat !</p>
+        <container>
+            <div>
+                <a href="./index.html">
+                    <img src="./img/logo.png" alt="logo">
+                </a>
+                <span class="aze">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>42,00€</span>
+            </div>
+            <ul>
                 <li>
-                    <i class="fa fa-lock" aria-hidden="true"></i>
-                    Pairement sécurisé
+                    <a href="./the.html">Thés</a>
                 </li>
                 <li>
-                    <i class="fa fa-truck" aria-hidden="true"></i>
-                    Ma livraison offerte
+                    <a href="./grands_crus.html">Grands Crus</a>
                 </li>
                 <li>
-                    <i class="fa fa-money" aria-hidden="true"></i>
-                    Carte de fidélité
+                    <a href="">Accessoires</a>
                 </li>
                 <li>
-                    <i class="fa fa-phone" aria-hidden="true"></i>
-                    Service client
+                    <a href="">Notre histoire</a>
                 </li>
                 <li>
-                    <i class="fa fa-check-circle" aria-hidden="true"></i>
-                    Garantie qualité
+                    <a href="">Contact</a>
                 </li>
             </ul>
-            
-            <section>
-                
+        </container>
+    </header>
+
+    <main>
+        <section>
+            <div class="main-liste--header">
+                <img src="img/tea/1.jpg" alt="THE NOIR">
+                <div>
+                    <h1>Thé noir</h1>
+                    <p>Le thé noir, que les chinois thé rouge en référence à la couleur de son infusion, est un thé complétement
+                        oxydé. La fabrication du thé noir se fait en cinq étapes: le flétrissage, le roulage, l'oxydation,
+                        la torréfaction et le triage. cette opération permet de différencier les différents grades.</p>
+                </div>
+            </div>
+
+            <div class="trioElem">
                 <article>
-                    <h2>découverte cup of tea</h2>
-                    <ul>
-                        <li><a href="">Notre histoire</a></li>
-                        <li><a href="">Nos boutiques</a></li>
-                        <li><a href="">Le thé de A à Z</a></li>
-                        <li><a href="">Recrutrement</a></li>
-                        <li><a href="">Contactez-nous !</a></li>
-                    </ul>
+                    <h2>Blue of london</h2>
+                    <img src="img/product/product1_big.jpg" alt="THE BLUE LONDON">
+                    <p>A partir de </p>
+                    <p class="list_price">9,00€</p>
+                    <a href="#">Voir ce produit</a>
                 </article>
-        
+
                 <article>
-                    <h2>commander en ligne</h2>
-                    <ul>
-                        <li><a href="">Première visite</a></li>
-                        <li><a href="">Aide - FAQ</a></li>
-                        <li><a href=""><Service client/a></li>
-                        <li><a href="">Suivre ma commande</a></li>
-                        <li><a href="">Conditions générales de vente</a></li>
-                    </ul>
+                    <h2>Thé des lords</h2>
+                    <img src="img/product/product3_big.jpg" alt="THE DES LORDS">
+                    <p>A partir de </p>
+                    <p class="list_price">8,00€</p>
+                    <a href="#">Voir ce produit</a>
                 </article>
-        
+
                 <article>
-                    <h2>suivez-nous !</h2>
-                    <ul>
-                        <li><a href="">Notre histoire</a></li>
-                        <li><a href="">Nos boutiques</a></li>
-                        <li><a href="">Le thé de A à Z</a></li>
-                        <li><a href="">Espace clients professionnels</a></li>
-                    </ul>
+                    <h2>Thé des vahinés</h2>
+                    <img src="img/product/product4_big.jpg" alt="THE DES VAHINES">
+                    <p>A partir de </p>
+                    <p class="list_price">9,40€</p>
+                    <a href="#">Voir ce produit</a>
                 </article>
-    
-            </section>
-    
-        </footer>
-    </body>
-    </html>
+            </div>
+
+        </section>
+
+        <section>
+            <div class="main-liste--header">
+                <img src="img/tea/2.jpg" alt="THE NOIR">
+                <div>
+                    <h1>Thé vert</h1>
+                    <p>Le thé noir, que les chinois thé rouge en référence à la couleur de son infusion, est un thé complétement
+                        oxydé. La fabrication du thé noir se fait en cinq étapes: le flétrissage, le roulage, l'oxydation,
+                        la torréfaction et le triage. cette opération permet de différencier les différents grades.</p>
+                </div>
+            </div>
+
+            <div class="trioElem">
+                <article>
+                    <h2>Thé du hammam</h2>
+                    <img src="img/product/product5_big.jpg" alt="THE BLUE LONDON">
+                    <p>A partir de </p>
+                    <p class="list_price">9,00€</p>
+                    <a href="#">Voir ce produit</a>
+                </article>
+
+                <article>
+                    <h2>Vive le thé !</h2>
+                    <img src="img/product/product6_big.jpg" alt="THE DES LORDS">
+                    <p>A partir de </p>
+                    <p class="list_price">8,00€</p>
+                    <a href="#">Voir ce produit</a>
+                </article>
+
+                <article>
+                    <h2>Thé des alizés</h2>
+                    <img src="img/product/product7_big.jpg" alt="THE DES VAHINES">
+                    <p>A partir de </p>
+                    <p class="list_price">9,40€</p>
+                    <a href="#">Voir ce produit</a>
+                </article>
+            </div>
+
+        </section>
+
+        <section>
+            <div class="main-liste--header">
+                <img src="img/tea/3.jpg" alt="THE NOIR">
+                <div>
+                    <h1>Oolong</h1>
+                    <p>Le thé noir, que les chinois thé rouge en référence à la couleur de son infusion, est un thé complétement
+                        oxydé. La fabrication du thé noir se fait en cinq étapes: le flétrissage, le roulage, l'oxydation,
+                        la torréfaction et le triage. cette opération permet de différencier les différents grades.</p>
+                </div>
+            </div>
+
+            <div class="trioElem">
+                <article>
+                    <h2>Vive les fêtes</h2>
+                    <img src="img/product/product8_big.jpg" alt="THE BLUE LONDON">
+                    <p>A partir de </p>
+                    <p class="list_price">9,00€</p>
+                    <a href="#">Voir ce produit</a>
+                </article>
+
+                <article>
+                    <h2>Fleur d'oranger oolong</h2>
+                    <img src="img/product/product9_big.jpg" alt="THE DES LORDS">
+                    <p>A partir de </p>
+                    <p class="list_price">8,00€</p>
+                    <a href="#">Voir ce produit</a>
+                </article>
+
+                <article>
+                    <h2>Oolong 7 agrumes</h2>
+                    <img src="img/product/product10_big.jpg" alt="THE DES VAHINES">
+                    <p>A partir de </p>
+                    <p class="list_price">9,40€</p>
+                    <a href="#">Voir ce produit</a>
+                </article>
+            </div>
+
+        </section>
+
+        <section>
+            <div class="main-liste--header">
+                <img src="img/tea/4.jpg" alt="THE NOIR">
+                <div>
+                    <h1>Thé blanc</h1>
+                    <p>Le thé noir, que les chinois thé rouge en référence à la couleur de son infusion, est un thé complétement
+                        oxydé. La fabrication du thé noir se fait en cinq étapes: le flétrissage, le roulage, l'oxydation,
+                        la torréfaction et le triage. cette opération permet de différencier les différents grades.</p>
+                </div>
+            </div>
+
+            <div class="trioElem">
+                <article>
+                    <h2>Thé des songes blancs</h2>
+                    <img src="img/product/product11_big.jpg" alt="THE BLUE LONDON">
+                    <p>A partir de </p>
+                    <p class="list_price">9,00€</p>
+                    <a href="#">Voir ce produit</a>
+                </article>
+
+                <article>
+                    <h2>Bai mu dan</h2>
+                    <img src="img/product/product12_big.jpg" alt="THE DES LORDS">
+                    <p>A partir de </p>
+                    <p class="list_price">8,00€</p>
+                    <a href="#">Voir ce produit</a>
+                </article>
+
+                <article>
+                    <h2>Aiguilles d'argent</h2>
+                    <img src="img/product/product13_big.jpg" alt="THE DES VAHINES">
+                    <p>A partir de </p>
+                    <p class="list_price">9,40€</p>
+                    <a href="#">Voir ce produit</a>
+                </article>
+            </div>
+
+        </section>
+
+        <section>
+            <div class="main-liste--header">
+                <img src="img/tea/5.jpg" alt="THE NOIR">
+                <div>
+                    <h1>Rooibos</h1>
+                    <p>Le thé noir, que les chinois thé rouge en référence à la couleur de son infusion, est un thé complétement
+                        oxydé. La fabrication du thé noir se fait en cinq étapes: le flétrissage, le roulage, l'oxydation,
+                        la torréfaction et le triage. cette opération permet de différencier les différents grades.</p>
+                </div>
+            </div>
+
+            <div class="trioElem">
+                <article>
+                    <h2>Rooibos à la verveine</h2>
+                    <img src="img/product/product14_big.jpg" alt="THE BLUE LONDON">
+                    <p>A partir de </p>
+                    <p class="list_price">9,00€</p>
+                    <a href="#">Voir ce produit</a>
+                </article>
+
+                <article>
+                    <h2>Spicy passion</h2>
+                    <img src="img/product/product15_big.jpg" alt="THE DES LORDS">
+                    <p>A partir de </p>
+                    <p class="list_price">8,00€</p>
+                    <a href="#">Voir ce produit</a>
+                </article>
+
+                <article>
+                    <h2>Rooibos des amants</h2>
+                    <img src="img/product/product16_big.jpg" alt="THE DES VAHINES">
+                    <p>A partir de </p>
+                    <p class="list_price">9,40€</p>
+                    <a href="#">Voir ce produit</a>
+                </article>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <ul class="footer--infos">
+            <li>
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                Pairement sécurisé
+            </li>
+            <li>
+                <i class="fa fa-truck" aria-hidden="true"></i>
+                Ma livraison offerte
+            </li>
+            <li>
+                <i class="fa fa-money" aria-hidden="true"></i>
+                Carte de fidélité
+            </li>
+            <li>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                Service client
+            </li>
+            <li>
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                Garantie qualité
+            </li>
+        </ul>
+
+        <section>
+
+            <article>
+                <h2>découverte cup of tea</h2>
+                <ul>
+                    <li>
+                        <a href="">Notre histoire</a>
+                    </li>
+                    <li>
+                        <a href="">Nos boutiques</a>
+                    </li>
+                    <li>
+                        <a href="">Le thé de A à Z</a>
+                    </li>
+                    <li>
+                        <a href="">Recrutrement</a>
+                    </li>
+                    <li>
+                        <a href="">Contactez-nous !</a>
+                    </li>
+                </ul>
+            </article>
+
+            <article>
+                <h2>commander en ligne</h2>
+                <ul>
+                    <li>
+                        <a href="">Première visite</a>
+                    </li>
+                    <li>
+                        <a href="">Aide - FAQ</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <Service client/a>
+                    </li>
+                    <li>
+                        <a href="">Suivre ma commande</a>
+                    </li>
+                    <li>
+                        <a href="">Conditions générales de vente</a>
+                    </li>
+                </ul>
+            </article>
+
+            <article>
+                <h2>suivez-nous !</h2>
+                <ul>
+                    <li>
+                        <a href="">Notre histoire</a>
+                    </li>
+                    <li>
+                        <a href="">Nos boutiques</a>
+                    </li>
+                    <li>
+                        <a href="">Le thé de A à Z</a>
+                    </li>
+                    <li>
+                        <a href="">Espace clients professionnels</a>
+                    </li>
+                </ul>
+            </article>
+
+        </section>
+
+    </footer>
+</body>
+
+</html>
