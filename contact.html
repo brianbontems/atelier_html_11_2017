@@ -1,4 +1,509 @@
-<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Tea Time - Liste produits</title>
+
+    <style>
+        /* 
+                    GLOBAL 
+                */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            margin: 0;
+            background: #F2F2F2;
+            font-family: 'open sans', sans-serif;
+            font-size: 1rem;
+        }
+
+        ul li {
+            list-style-type: none;
+        }
+
+        header,
+        footer {
+            background: #f6d258;
+            color: white;
+            position: relative;
+        }
+
+        h2 {
+            font-family: 'Indie FLower';
+            text-transform: uppercase;
+        }
+
+        container {
+            display: block;
+            margin: 0 3em;
+        }
+
+        main {
+            background: #F2F2F2;
+        }
+
+        main section {
+            background: white;
+        }
+        /*
+                    HEADER
+                */
+
+        header div {
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header ul {
+            display: flex;
+            text-align: center;
+            flex-flow: row;
+            justify-content: space-between;
+            padding: 1rem 0;
+            flex-basis: 100%;
+            text-transform: uppercase;
+            font-size: .85rem;
+            text-shadow: 0 0 5px rgba(0, 0, 0, .1);
+        }
+
+        header ul li {
+            background: rgba(255, 255, 255, 0);
+            transition: background 400ms ease;
+        }
+
+        header ul li:hover {
+            background: rgba(255, 255, 255, .3);
+            transition: background 200ms ease;
+        }
+
+        .aze i {
+            border-radius: 35px;
+            border: 1px solid rgba(255, 255, 255, .65);
+            color: rgba(255, 255, 255, .65);
+            padding: .5rem;
+            margin-right: .5rem;
+        }
+
+        .header--promo {
+            background: #e0bf42;
+            text-align: center;
+            font-size: .75rem;
+            padding: .25rem;
+        }
+
+        header a img {
+            width: 20rem;
+        }
+
+        header a {
+            text-decoration: none;
+            color: inherit;
+            display: inline-block;
+            padding: 1rem;
+        }
+        /* 
+                MAIN 
+            */
+
+        main {
+            margin: 0 3rem;
+        }
+
+        main section {
+            background: white;
+            margin: 3rem auto;
+            padding: 1rem;
+        }
+
+        main .main-liste--header h1 {
+            border-bottom: 1px solid rgba(176, 144, 103, .3);
+            padding-left: 1rem;
+            color: #f6d258
+        }
+
+        main .main-liste--header p {
+            padding-left: 1rem;
+        }
+
+        main .trioElem {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        main .trioElem img {
+            width: 100%;
+        }
+
+        main .trioElem article {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        main .trioElem article a {
+            padding: 1rem;
+            background: #7ada91;
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        main .trioElem article p:nth-child(even) {
+            margin-bottom: 3rem;
+            margin-top: -1rem;
+            font-size: 1.5rem;
+        }
+
+        main .trioElem .list_price {
+            font-family: 'Indie Flower';
+        }
+
+        main .main-liste--header {
+            display: flex;
+            justify-content: stretch;
+            align-items: center;
+        }
+        /* 
+                    FOOTER 
+                */
+
+        footer a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        footer section {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        footer section article {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        footer ul.footer--infos {
+            background: #e0bf42;
+            color: rgba(255, 255, 255, .75);
+            display: flex;
+            justify-content: space-around;
+            padding: 2rem 0;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: .75rem;
+        }
+
+        footer ul.footer--infos i {
+            display: block;
+            font-size: 1.5rem;
+            padding-bottom: .5rem;
+        }
+
+        footer ul {
+            padding: 0;
+            color: rgba(255, 255, 255, .75);
+            margin-bottom: 3rem;
+        }
+
+        footer ul li {
+            padding: .15rem;
+        }
+        /* 
+                    MEDIA QUERIES 
+                */
+        /* largeur max de 1100px */
+
+        @media (min-width: 1100px) {
+            /* 
+                        GLOBAL 
+                    */
+            container {
+                display: block;
+                max-width: 1100px;
+                margin: auto;
+            }
+        }
+        /* TABLETTE > 480px < 768px */
+
+        @media (min-width: 480px) and (max-width: 768px) {
+            /* 
+                        GLOBAL 
+                */
+            container {
+                margin: 0 .5em;
+            }
+
+            /* 
+                      MAIN 
+                */
+            main {
+                margin: 0;
+            }
+            main .main-liste--header img {
+                display: none;
+            }
+            main .trioElem {
+                flex-flow: column;
+            }
+            main .trioElem article {
+                width: 75%;
+                margin: auto;
+            }
+        }
+        /* MOBILE < 480px */
+
+        @media (max-width: 480px) {
+            /* 
+                        GLOBAL 
+                    */
+            container {
+                display: block;
+                margin: 0;
+            }
+
+
+            /* 
+                        HEADER 
+                    */
+            .aze i {
+                border: 1px solid rgba(255, 255, 255, .65);
+                color: rgba(255, 255, 255, .65);
+            }
+            .aze {
+                border-radius: 0 35px 35px 0;
+                box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+                padding: .5em .75em;
+            }
+
+            header a {
+                align-self: center;
+            }
+            header div {
+                display: flex;
+                flex-flow: column-reverse;
+                justify-content: space-between;
+                align-items: baseline;
+            }
+            header ul {
+                display: flex;
+                text-align: center;
+                flex-flow: column;
+                justify-content: space-between;
+                padding: 1rem 0;
+                flex-basis: 100%;
+                margin: auto -3rem;
+            }
+
+            /* 
+                      MAIN 
+                    */
+            main {
+                margin: 0;
+            }
+            main .main-liste--header img {
+                display: none;
+            }
+            main .trioElem {
+                flex-flow: column;
+            }
+
+            /* 
+                        FOOTER 
+                    */
+            footer>ul {
+                display: flex;
+                flex-flow: row;
+                flex-wrap: wrap;
+            }
+            footer>ul li {
+                padding: .5rem
+            }
+
+            footer section {
+                display: flex;
+                flex-flow: column;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <p class="header--promo">Livraison offerte à partir de 65€ d'achat !</p>
+        <container>
+            <div>
+                <a href="./index.html">
+                    <img src="./img/logo.png" alt="logo">
+                </a>
+                <span class="aze">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>42,00€</span>
+            </div>
+            <ul>
+                <li>
+                    <a href="./the.html">Thés</a>
+                </li>
+                <li>
+                    <a href="./grands_crus.html">Grands Crus</a>
+                </li>
+                <li>
+                    <a href="">Accessoires</a>
+                </li>
+                <li>
+                    <a href="">Notre histoire</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </container>
+    </header>
+
+    <main class="container">
+        <h1>Contactez-nous</h1>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci animi assumenda consequatur cupiditate deleniti
+            dolores, eius est excepturi expedita facere illum nam nesciunt omnis quas quidem veniam voluptate voluptatum!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequatur cumque illo itaque iure labore
+            soluta. Accusantium, aperiam beatae delectus dolore eligendi eos non, voluptates. Deserunt facere incidunt maxime
+            nulla. A et fuga in ipsum labore laborum minus.
+        </span>
+        <form action="#">
+            <label for="" class="nom">
+                Nom
+                <input type="text" placeholder="Votre nom" class="">
+            </label>
+            <label for="" class="prenom">
+                Prénom
+                <input type="text" placeholder="Votre prénom" class="">
+            </label>
+            <label for="" class="mail">
+                Mail
+                <input type="text" placeholder="Votre mail" class="">
+            </label>
+            <label for="" class="message">
+                Message
+                <textarea name="" id="" placeholder="Votre message" class=""></textarea>
+            </label>
+            <input type="submit" value="Envoyer" class="envoyer">
+        </form>
+    </main>
+
+
+    <footer>
+
+        <ul class="footer--infos">
+            <li>
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                Paiement sécurisé
+            </li>
+            <li>
+                <i class="fa fa-truck" aria-hidden="true"></i>
+                Ma livraison offerte
+            </li>
+            <li>
+                <i class="fa fa-money" aria-hidden="true"></i>
+                Carte de fidélité
+            </li>
+            <li>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                Service client
+            </li>
+            <li>
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                Garantie qualité
+            </li>
+        </ul>
+
+        <section>
+
+            <article>
+                <h2>découverte cup of tea</h2>
+                <ul>
+                    <li>
+                        <a href="">Notre histoire</a>
+                    </li>
+                    <li>
+                        <a href="">Nos boutiques</a>
+                    </li>
+                    <li>
+                        <a href="">Le thé de A à Z</a>
+                    </li>
+                    <li>
+                        <a href="">Recrutrement</a>
+                    </li>
+                    <li>
+                        <a href="">Contactez-nous !</a>
+                    </li>
+                </ul>
+            </article>
+
+            <article>
+                <h2>commander en ligne</h2>
+                <ul>
+                    <li>
+                        <a href="">Première visite</a>
+                    </li>
+                    <li>
+                        <a href="">Aide - FAQ</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <Service client/a>
+                    </li>
+                    <li>
+                        <a href="">Suivre ma commande</a>
+                    </li>
+                    <li>
+                        <a href="">Conditions générales de vente</a>
+                    </li>
+                </ul>
+            </article>
+
+            <article>
+                <h2>suivez-nous !</h2>
+                <ul>
+                    <li>
+                        <a href="">Notre histoire</a>
+                    </li>
+                    <li>
+                        <a href="">Nos boutiques</a>
+                    </li>
+                    <li>
+                        <a href="">Le thé de A à Z</a>
+                    </li>
+                    <li>
+                        <a href="">Espace clients professionnels</a>
+                    </li>
+                </ul>
+            </article>
+
+        </section>
+
+    </footer>
+</body>
+
+</html>
+
+<!-- <!DOCTYPE html>
     <html lang="fr">
     <head>
         <meta charset="UTF-8">
@@ -7,7 +512,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
         <meta name="viewport" content="width=device-width, user-scalable=no">
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
         <main class="container">
@@ -40,4 +545,4 @@
             </form>
         </main>
     </body>
-    </html>
+    </html> -->
