@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(242,242,242);
+    font-size: 62.5%;
+}
+
+.container {
+    max-width: 1100px;
+    width: 90%;
+    display: block;
+    margin:auto;
+}
+
+h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 2.1rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #f6d258;
+}
+
+.promo {
+    max-width: 1100px;
+    width: 90%;
+    margin:auto;
+    display: block;
+}
+
+.info {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.5em;
+    color: #666666;
+    margin-top:15px;
+    margin-bottom: 40px;
+    display: block;
+}
+
+.choisirVotreThe {
+    display: block;
+    max-width: 1100px;
+    width: 90%;
+    background-color: #fff;
+    margin:auto;
+    padding-bottom:50px;
+}
+
+h2  {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #f6d258;
+    border-bottom: 1px solid;
+    border-bottom-color: rgba(121, 121, 121, 0.2);
+}
+
+.contenu {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.contenu article {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+.art1 {
+    width: 20%;
+}
+
+.art2 {
+    width: 20%;
+}
+
+.art3 {
+    width: 20%;
+}
+
+.art4 {
+    width: 20%;
+}
+
+.art5 {
+    width: 20%;
+}
+
+
+.the1 {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #666666;
+    display: inline-block;
+    margin:auto;
+}
+
+.the2 {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #666666;
+    display: inline-block;
+}
+
+.the3 {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #666666;
+    display: inline-block;
+}
+
+.the4 {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #666666;
+    display: inline-block;
+}
+
+.the5 {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #666666;
+    display: inline-block;
+}
+
+.products {
+    display: flex;
+    max-width: 1100px;
+    width: 90%;
+    background-color: #fff;
+    margin:auto;
+    margin-top: 30px;
+}
+
+.article {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-flow: column;
+}
+
+.article span {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 1.0rem;
+    color: #666666;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h3 {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #f6d258;
+    border-bottom: 1px solid;
+    border-bottom-color: rgba(121, 121, 121, 0.2);
+}
+
+h4 {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #666666;
+}
+
+.aPartir {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 1.0rem;
+    color: #666666;
+    margin-top: 30px;
+}
+
+.prixArticle {
+    font-family: 'Indie Flower', cursive;
+
+    text-align: center;
+    font-size: 1.6rem;
+    color: #666666;
+}
+
+.bouton {
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #7ada91;
+    color: white;
+    font-size: 1.0rem;
+    display: block;
+    width: 60%;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+
