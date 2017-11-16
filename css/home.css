@@ -1,21 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: rgb(242,242,242);
-    font-size: 62.5%;
-}
-
-.container {
+main .container {
     max-width: 1100px;
     width: 90%;
     display: block;
-    margin:auto;
+    margin: auto;
 }
 
-h1 {
+main h1 {
     font-family: 'Indie Flower', cursive;
     font-size: 2.1rem;
     text-align: center;
@@ -27,7 +17,7 @@ h1 {
 .promo {
     max-width: 1100px;
     width: 90%;
-    margin:auto;
+    margin: auto;
     display: block;
 }
 
@@ -36,7 +26,7 @@ h1 {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.5em;
     color: #666666;
-    margin-top:15px;
+    margin-top: 15px;
     margin-bottom: 40px;
     display: block;
 }
@@ -46,11 +36,11 @@ h1 {
     max-width: 1100px;
     width: 90%;
     background-color: #fff;
-    margin:auto;
-    padding-bottom:50px;
+    margin: auto;
+    padding-bottom: 50px;
 }
 
-h2  {
+main h2 {
     font-family: 'Indie Flower', cursive;
     text-align: center;
     font-size: 1.6rem;
@@ -62,7 +52,7 @@ h2  {
 .contenu {
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 
 .contenu article {
@@ -91,14 +81,13 @@ h2  {
     width: 20%;
 }
 
-
 .the1 {
     font-family: 'Indie Flower', cursive;
     text-align: center;
     font-size: 1.6rem;
     color: #666666;
     display: inline-block;
-    margin:auto;
+    margin: auto;
 }
 
 .the2 {
@@ -138,14 +127,14 @@ h2  {
     max-width: 1100px;
     width: 90%;
     background-color: #fff;
-    margin:auto;
+    margin: auto;
     margin-top: 30px;
 }
 
 .article {
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     flex-flow: column;
 }
 
@@ -158,7 +147,7 @@ h2  {
     margin-right: 10%;
 }
 
-h3 {
+main h3 {
     font-family: 'Indie Flower', cursive;
     text-align: center;
     font-size: 1.6rem;
@@ -167,7 +156,7 @@ h3 {
     border-bottom-color: rgba(121, 121, 121, 0.2);
 }
 
-h4 {
+main h4 {
     font-family: 'Indie Flower', cursive;
     text-align: center;
     font-size: 1.6rem;
@@ -184,7 +173,6 @@ h4 {
 
 .prixArticle {
     font-family: 'Indie Flower', cursive;
-
     text-align: center;
     font-size: 1.6rem;
     color: #666666;
@@ -206,3 +194,354 @@ h4 {
 }
 
 
+/* CSS FOOTER ET HEADER */
+
+
+/* 
+                GLOBAL 
+            */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    color: #666666;
+}
+
+body {
+    margin: 0;
+    background: #F2F2F2;
+    font-family: 'open sans', sans-serif;
+    font-size: 1rem;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+header,
+footer {
+    background: #f6d258;
+    color: white;
+    position: relative;
+}
+
+footer h2,
+header h2 {
+    font-family: 'Indie FLower';
+    text-transform: uppercase;
+}
+
+container {
+    display: block;
+    margin: 0 3em;
+}
+
+main {
+    background: #F2F2F2;
+}
+
+main section {
+    background: white;
+}
+
+
+/*
+                                HEADER
+                            */
+
+header div {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    text-align: center;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 1rem 0;
+    flex-basis: 100%;
+    text-transform: uppercase;
+    font-size: .85rem;
+    text-shadow: 0 0 5px rgba(0, 0, 0, .1);
+}
+
+header ul li {
+    background: rgba(255, 255, 255, 0);
+    transition: background 400ms ease;
+}
+
+header ul li:hover {
+    background: rgba(255, 255, 255, .3);
+    transition: background 200ms ease;
+}
+
+.aze i {
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, .65);
+    color: rgba(255, 255, 255, .65);
+    padding: .5rem;
+    margin-right: .5rem;
+}
+
+.header--promo {
+    background: #e0bf42;
+    text-align: center;
+    font-size: .75rem;
+    padding: .25rem;
+}
+
+header a img {
+    width: 20rem;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    padding: 1rem;
+}
+
+
+/* 
+                            MAIN 
+                        */
+
+main {
+    margin: 0 3rem;
+}
+
+main section {
+    background: white;
+    margin: 0 auto 3rem auto;
+    padding: 1rem;
+    max-width: 1100px;
+}
+
+main h3 {
+    font-family: 'Indie Flower';
+    font-size: 1.5rem;
+}
+
+main .main-liste--header h2 {
+    font-size: 1.5rem;
+    font-family: 'Indie Flower';
+    border-bottom: 1px solid rgba(176, 144, 103, .3);
+    padding-left: 1rem;
+    color: #f6d258
+}
+
+main .main-liste--header p {
+    padding-left: 1rem;
+}
+
+main .trioElem {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .trioElem img {
+    width: 100%;
+}
+
+main .trioElem article {
+    padding: 1rem;
+    text-align: center;
+}
+
+main .trioElem article a {
+    padding: 1rem;
+    background: #7ada91;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+main .trioElem article p:nth-child(even) {
+    margin-bottom: 3rem;
+    margin-top: -1rem;
+    font-size: 1.5rem;
+}
+
+main .trioElem .list_price {
+    font-family: 'Indie Flower';
+}
+
+main .main-liste--header {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+}
+
+
+/* 
+                                FOOTER 
+                            */
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer section {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer section article {
+    text-align: center;
+    padding: 1rem;
+}
+
+footer ul.footer--infos {
+    background: #e0bf42;
+    color: rgba(255, 255, 255, .75);
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .75rem;
+}
+
+footer ul.footer--infos i {
+    display: block;
+    font-size: 1.5rem;
+    padding-bottom: .5rem;
+}
+
+footer ul {
+    padding: 0;
+    color: rgba(255, 255, 255, .75);
+    margin-bottom: 3rem;
+}
+
+footer ul li {
+    padding: .15rem;
+}
+
+
+/* 
+                                MEDIA QUERIES 
+                            */
+
+
+/* largeur max de 1100px */
+
+@media (min-width: 1100px) {
+    /* 
+                                    GLOBAL 
+                                */
+    container {
+        display: block;
+        max-width: 1100px;
+        margin: auto;
+    }
+}
+
+
+/* TABLETTE > 480px < 768px */
+
+@media (min-width: 480px) and (max-width: 768px) {
+    /* 
+                                    GLOBAL 
+                            */
+    container {
+        margin: 0 .5em;
+    }
+    /* 
+                                  MAIN 
+                            */
+    main {
+        margin: 0;
+    }
+    main .main-liste--header img {
+        display: none;
+    }
+    main .trioElem {
+        flex-flow: column;
+    }
+    main .trioElem article {
+        width: 75%;
+        margin: auto;
+    }
+}
+
+
+/* MOBILE < 480px */
+
+@media (max-width: 480px) {
+    /* 
+                                    GLOBAL 
+                                */
+    container {
+        display: block;
+        margin: 0;
+    }
+    /* 
+                                    HEADER 
+                                */
+    .aze i {
+        border: 1px solid rgba(255, 255, 255, .65);
+        color: rgba(255, 255, 255, .65);
+    }
+    .aze {
+        border-radius: 0 35px 35px 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+        padding: .5em .75em;
+    }
+    header a {
+        align-self: center;
+    }
+    header div {
+        display: flex;
+        flex-flow: column-reverse;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    header ul {
+        display: flex;
+        text-align: center;
+        flex-flow: column;
+        justify-content: space-between;
+        padding: 1rem 0;
+        flex-basis: 100%;
+        margin: auto -3rem;
+    }
+    /* 
+                                  MAIN 
+                                */
+    main {
+        margin: 0;
+    }
+    main .main-liste--header img {
+        display: none;
+    }
+    main .trioElem {
+        flex-flow: column;
+    }
+    /* 
+                                    FOOTER 
+                                */
+    footer>ul {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+    }
+    footer>ul li {
+        padding: .5rem
+    }
+    footer section {
+        display: flex;
+        flex-flow: column;
+    }
+}
