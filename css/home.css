@@ -350,6 +350,18 @@ main .main-liste--header {
     justify-content: stretch;
     align-items: center;
 }
+main .contenu article {
+    filter: grayscale(0%);
+    transform: scale(1);
+    opacity: 1;
+    transition: all 250ms ease;
+}
+main .contenu:hover article:not(:hover) {
+    filter: grayscale(100%);
+    transform: scale(.75);
+    opacity: 0.3;
+    transition: all 250ms ease;
+}
 
 
 /* 
