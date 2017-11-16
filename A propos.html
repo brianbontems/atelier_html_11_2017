@@ -1,77 +1,75 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="A propos.css">
-    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css">
-    <title>A propos</title>
-
-        <header>
-            <p class="header--promo">Livraison offerte à partir de 65€ d'achat !</p>
-          <container>
-            <div>
-              <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
-              <span class="aze"><i class="fa fa-shopping-cart" aria-hidden="true"></i>42,00€</span>
-              </div>
-            <ul>
-              <li><a href="./the.html">Thés</a></li>
-              <li><a href="./grands_crus.html">Grands Crus</a></li>
-              <li><a href="">Accessoires</a></li>
-              <li><a href="">Notre histoire</a></li>
-              <li><a href="">Contact</a></li>
-            </ul>
-        </container>
-</header>
-    <style>
-        /*
-            GLOBAL
-        */
-        * {
-            box-sizing: border-box;
-        }
-        html {
-            font-size: 16px;
-        }
-
-        body {
-            margin: 0;
-            background: #F2F2F2;
-            font-family: 'open sans', sans-serif;
-            font-size: 1rem;
-            header, footer {
+<html lang="fr">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="css/A%20propos.css">
+        <title>Tea Time - Liste produits</title>
+    
+        <style>
+            /* 
+                        GLOBAL 
+                    */
+    
+            * {
+                box-sizing: border-box;
+            }
+    
+            html {
+                font-size: 16px;
+                color: #666666;
+            }
+    
+            body {
+                margin: 0;
+                background: #F2F2F2;
+                font-family: 'open sans', sans-serif;
+                font-size: 1rem;
+            }
+    
+            ul li {
+                list-style-type: none;
+            }
+    
+            header,
+            footer {
                 background: #f6d258;
                 color: white;
                 position: relative;
             }
-
+    
             h2 {
                 font-family: 'Indie FLower';
                 text-transform: uppercase;
             }
+    
             container {
                 display: block;
                 margin: 0 3em;
             }
-
+    
             main {
                 background: #F2F2F2;
             }
-
+    
             main section {
                 background: white;
             }
-
             /*
-                HEADER
-            */
+                        HEADER
+                    */
+    
             header div {
                 display: flex;
                 flex-flow: row;
                 justify-content: space-between;
                 align-items: center;
             }
+    
             header ul {
                 display: flex;
                 text-align: center;
@@ -81,74 +79,83 @@
                 flex-basis: 100%;
                 text-transform: uppercase;
                 font-size: .85rem;
-                text-shadow: 0 0 5px rgba(0,0,0,.1);
+                text-shadow: 0 0 5px rgba(0, 0, 0, .1);
             }
+    
             header ul li {
-                background: rgba(255,255,255,0);
+                background: rgba(255, 255, 255, 0);
                 transition: background 400ms ease;
             }
+    
             header ul li:hover {
-                background: rgba(255,255,255,.3);
+                background: rgba(255, 255, 255, .3);
                 transition: background 200ms ease;
             }
+    
             .aze i {
                 border-radius: 35px;
-                border: 1px solid rgba(255,255,255,.65);
-                color: rgba(255,255,255,.65);
+                border: 1px solid rgba(255, 255, 255, .65);
+                color: rgba(255, 255, 255, .65);
                 padding: .5rem;
                 margin-right: .5rem;
             }
+    
             .header--promo {
                 background: #e0bf42;
                 text-align: center;
                 font-size: .75rem;
                 padding: .25rem;
             }
-
+    
             header a img {
                 width: 20rem;
             }
+    
             header a {
                 text-decoration: none;
                 color: inherit;
                 display: inline-block;
                 padding: 1rem;
             }
-
-            /*
-                MAIN
-            */
+            /* 
+                    MAIN 
+                */
+    
             main {
                 margin: 0 3rem;
             }
+    
             main section {
                 background: white;
-                margin: 3rem auto;
+                margin: auto;
                 padding: 1rem;
-
+                max-width: 1100px;
             }
-
+    
             main .main-liste--header h1 {
-                border-bottom: 1px solid rgba(176,144,103,.3);
+                border-bottom: 1px solid rgba(176, 144, 103, .3);
                 padding-left: 1rem;
+                color: #f6d258
             }
+    
             main .main-liste--header p {
                 padding-left: 1rem;
             }
-
-            main .trioElem{
+    
+            main .trioElem {
                 display: flex;
                 justify-content: space-between;
             }
-
+    
             main .trioElem img {
                 width: 100%;
             }
-
+    
             main .trioElem article {
                 padding: 1rem;
                 text-align: center;
             }
+    
             main .trioElem article a {
                 padding: 1rem;
                 background: #7ada91;
@@ -156,42 +163,97 @@
                 color: white;
                 text-transform: uppercase;
             }
-
+    
             main .trioElem article p:nth-child(even) {
                 margin-bottom: 3rem;
                 margin-top: -1rem;
                 font-size: 1.5rem;
             }
+    
             main .trioElem .list_price {
                 font-family: 'Indie Flower';
             }
-            main .main-liste--header{
+    
+            main .main-liste--header {
                 display: flex;
                 justify-content: stretch;
                 align-items: center;
             }
 
-            /*
-                FOOTER
-            */
+            main img.gauche {
+                float: left;
+            }
+            main img.droite {
+                float: right;
+            }
+            main img.gauche, main img.droite {
+                width: 50%;
+                padding: 1.5rem;
+             }
+             main h2, main h3, main h4 {
+                 font-family: 'Indie Flower';
+             }
+
+             main h2 {
+                 text-align: center;
+                 font-size: 2rem;
+             }
+
+             main h3 {
+                 color: #f6d258;
+                 border-bottom: 1px solid rgba(176, 144, 103, .3);
+                 font-size: 1.5rem;
+             }
+
+             main h3 {
+                 font-size: 1.25rem;
+             }
+
+             main div.flexSection {
+                 background: #FEF7D9;
+                 display: flex;
+                 justify-content: space-around;
+                 text-align: center;
+                 margin: 1rem;
+             }
+             main div.flexSection article {
+                 padding: 1.5rem;
+             }
+
+             main article i {
+                 background: #7ada91;
+                 border-radius: 50px;
+                 padding: 2rem;
+                 color: white;
+             }
+
+
+            /* 
+                        FOOTER 
+                    */
+    
             footer a {
                 text-decoration: none;
                 color: inherit;
             }
+    
             footer a:hover {
                 color: white;
             }
+    
             footer section {
                 display: flex;
                 justify-content: space-around;
             }
+    
             footer section article {
                 text-align: center;
                 padding: 1rem;
             }
+    
             footer ul.footer--infos {
                 background: #e0bf42;
-                color: rgba(255,255,255,.75);
+                color: rgba(255, 255, 255, .75);
                 display: flex;
                 justify-content: space-around;
                 padding: 2rem 0;
@@ -199,85 +261,96 @@
                 text-transform: uppercase;
                 font-size: .75rem;
             }
+    
             footer ul.footer--infos i {
                 display: block;
                 font-size: 1.5rem;
                 padding-bottom: .5rem;
             }
-
+    
             footer ul {
                 padding: 0;
-                color: rgba(255,255,255,.75);
+                color: rgba(255, 255, 255, .75);
                 margin-bottom: 3rem;
             }
+    
             footer ul li {
                 padding: .15rem;
             }
-
-
-            /*
-                MEDIA QUERIES
-            */
-
+            /* 
+                        MEDIA QUERIES 
+                    */
             /* largeur max de 1100px */
+    
             @media (min-width: 1100px) {
-                /*
-                    GLOBAL
-                */
+                /* 
+                            GLOBAL 
+                        */
                 container {
                     display: block;
                     max-width: 1100px;
                     margin: auto;
                 }
             }
-
             /* TABLETTE > 480px < 768px */
+    
             @media (min-width: 480px) and (max-width: 768px) {
-                /*
-                    GLOBAL
-                */
+                /* 
+                            GLOBAL 
+                    */
                 container {
                     margin: 0 .5em;
                 }
-                /*
-                  MAIN
-                */
+    
+                /* 
+                          MAIN 
+                    */
+                main {
+                    margin: 0;
+                }
                 main .main-liste--header img {
-                  display: none;
+                    display: none;
                 }
                 main .trioElem {
-                  flex-flow: column;
+                    flex-flow: column;
                 }
                 main .trioElem article {
-                width: 75%;
-                margin: auto;
-              }
-
+                    width: 75%;
+                    margin: auto;
+                }
+                main img.gauche, main img.droite {
+                    width: 70%;
+                    padding: 1.5rem;
+                }
+                main div.flexSection {
+                    flex-flow: column;
+                }
             }
-
             /* MOBILE < 480px */
+    
             @media (max-width: 480px) {
-                /*
-                    GLOBAL
-                */
+                /* 
+                            GLOBAL 
+                        */
                 container {
                     display: block;
                     margin: 0;
                 }
-
-                /*
-                    HEADER
-                */
+    
+    
+                /* 
+                            HEADER 
+                        */
                 .aze i {
-                    border: 1px solid rgba(255,255,255,.65);
-                    color: rgba(255,255,255,.65);
+                    border: 1px solid rgba(255, 255, 255, .65);
+                    color: rgba(255, 255, 255, .65);
                 }
                 .aze {
                     border-radius: 0 35px 35px 0;
-                    box-shadow: 0 0 10px rgba(0,0,0,.1);
+                    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
                     padding: .5em .75em;
                 }
-
+    
                 header a {
                     align-self: center;
                 }
@@ -296,145 +369,221 @@
                     flex-basis: 100%;
                     margin: auto -3rem;
                 }
-                /*
-                  MAIN
-                */
+    
+                /* 
+                          MAIN 
+                        */
+                main {
+                    margin: 0;
+                }
                 main .main-liste--header img {
-                  display: none;
+                    display: none;
                 }
                 main .trioElem {
-                  flex-flow: column;
+                    flex-flow: column;
                 }
-                /*
-                    FOOTER
-                */
-                footer > ul {
+
+                main img.gauche, main img.droite {
+                    width: 100%;
+                    padding: 0;
+                }
+
+                main div.flexSection {
+                    flex-flow: column;
+                }
+    
+                /* 
+                            FOOTER 
+                        */
+                footer>ul {
                     display: flex;
                     flex-flow: row;
                     flex-wrap: wrap;
                 }
-                footer > ul li {
+                footer>ul li {
                     padding: .5rem
                 }
-
+    
                 footer section {
                     display: flex;
                     flex-flow: column;
                 }
             }
-
-
-
-
         </style>
-  </head>
-  <body>
-    <main>
-      <section class:"Amelie">
-        <h1> Notre équipe</h1>
-        <h2>Amélie, fondatrice de Cup of Tea</h2>
-        <img class="gauche" src="amelie.jpg" alt="PHOTO DE LA FONDATRICE DE CUP OF TEA">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </section>
-
-      <section>
-        <h2>Xavier, fondateur de Cup of Tea</h2>
-        <img class="droite" src="xavier.jpg" alt="PHOTO DU FONDATEUR DE CUP OF TEA">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </section>
-
-      <section>
-        <!-- H1 centré au milieu-->
-        <h1>Notre concept</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </section>
-
-      <section>
-        <!-- il manque l'icône je sais pas comment la mettre-->
-        <article class="coeur">
-          <a href="#"><i class="fa fa-heart fa-2x circle" aria-hidden="true"></i></a>
-          <h3>Lorem ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </article>
-        <article class="smiley">
-          <i class="fa fa-smile-o" aria-hidden="true"></i>
-          <h3>Lorem ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </article>
-        <article class="café">
-          <a href="#"><i class="fa fa-coffee fa-2x circle" aria-hidden="true"></i></a>
-          <h3>Lorem ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </article>
-      </section>
-    </main>
-  </body>
-
-  <footer>
-
-      <ul class="footer--infos">
-          <li>
-              <i class="fa fa-lock" aria-hidden="true"></i>
-              Pairement sécurisé
-          </li>
-          <li>
-              <i class="fa fa-truck" aria-hidden="true"></i>
-              Ma livraison offerte
-          </li>
-          <li>
-              <i class="fa fa-money" aria-hidden="true"></i>
-              Carte de fidélité
-          </li>
-          <li>
-              <i class="fa fa-phone" aria-hidden="true"></i>
-              Service client
-          </li>
-          <li>
-              <i class="fa fa-check-circle" aria-hidden="true"></i>
-              Garantie qualité
-          </li>
-      </ul>
-
-      <section>
-
-          <article>
-              <h2>découverte cup of tea</h2>
-              <ul>
-                  <li><a href="">Notre histoire</a></li>
-                  <li><a href="">Nos boutiques</a></li>
-                  <li><a href="">Le thé de A à Z</a></li>
-                  <li><a href="">Recrutrement</a></li>
-                  <li><a href="">Contactez-nous !</a></li>
-              </ul>
-          </article>
-
-          <article>
-              <h2>commander en ligne</h2>
-              <ul>
-                  <li><a href="">Première visite</a></li>
-                  <li><a href="">Aide - FAQ</a></li>
-                  <li><a href=""><Service client/a></li>
-                  <li><a href="">Suivre ma commande</a></li>
-                  <li><a href="">Conditions générales de vente</a></li>
-              </ul>
-          </article>
-
-          <article>
-              <h2>suivez-nous !</h2>
-              <ul>
-                  <li><a href="">Notre histoire</a></li>
-                  <li><a href="">Nos boutiques</a></li>
-                  <li><a href="">Le thé de A à Z</a></li>
-                  <li><a href="">Espace clients professionnels</a></li>
-              </ul>
-          </article>
-
-      </section>
-
-  </footer>
-</html>
+    
+    </head>
+    
+    <body>
+    
+        <header>
+            <p class="header--promo">Livraison offerte à partir de 65€ d'achat !</p>
+            <container>
+                <div>
+                    <a href="./index.html">
+                        <img src="./img/logo.png" alt="logo">
+                    </a>
+                    <span class="aze">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>42,00€</span>
+                </div>
+                <ul>
+                    <li>
+                        <a href="./the.html">Thés</a>
+                    </li>
+                    <li>
+                        <a href="./grands_crus.html">Grands Crus</a>
+                    </li>
+                    <li>
+                        <a href="">Accessoires</a>
+                    </li>
+                    <li>
+                        <a href="">Notre histoire</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+            </container>
+        </header>
+    
+        <main>
+            <section class:"Amelie">
+              <h2> Notre équipe</h2>
+              <h3>Amélie, fondatrice de Cup of Tea</h3>
+              <img class="gauche" src="img/amelie.jpg" alt="PHOTO DE LA FONDATRICE DE CUP OF TEA">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+      
+            <section>
+              <h3>Xavier, fondateur de Cup of Tea</h3>
+              <img class="droite" src="img/xavier.jpg" alt="PHOTO DU FONDATEUR DE CUP OF TEA">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+      
+            <section>
+              <!-- h2 centré au milieu-->
+              <h2>Notre concept</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+      
+            <section>
+                <div class="flexSection">
+                    <!-- il manque l'icône je sais pas comment la mettre-->
+                    <article class="coeur">
+                      <a href="#"><i class="fa fa-heart fa-2x circle" aria-hidden="true"></i></a>
+                      <h4>Lorem ipsum</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </article>
+                    <article class="smiley">
+                      <i class="fa fa-smile-o fa-2x circle" aria-hidden="true"></i>
+                      <h4>Lorem ipsum</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </article>
+                    <article class="café">
+                      <a href="#"><i class="fa fa-coffee fa-2x circle" aria-hidden="true"></i></a>
+                      <h4>Lorem ipsum</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </article>
+                </div>
+            </section>
+          </main>
+    
+    
+        <footer>
+    
+            <ul class="footer--infos">
+                <li>
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    Paiement sécurisé
+                </li>
+                <li>
+                    <i class="fa fa-truck" aria-hidden="true"></i>
+                    Ma livraison offerte
+                </li>
+                <li>
+                    <i class="fa fa-money" aria-hidden="true"></i>
+                    Carte de fidélité
+                </li>
+                <li>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    Service client
+                </li>
+                <li>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    Garantie qualité
+                </li>
+            </ul>
+    
+            <section>
+    
+                <article>
+                    <h2>découverte cup of tea</h2>
+                    <ul>
+                        <li>
+                            <a href="">Notre histoire</a>
+                        </li>
+                        <li>
+                            <a href="">Nos boutiques</a>
+                        </li>
+                        <li>
+                            <a href="">Le thé de A à Z</a>
+                        </li>
+                        <li>
+                            <a href="">Recrutrement</a>
+                        </li>
+                        <li>
+                            <a href="">Contactez-nous !</a>
+                        </li>
+                    </ul>
+                </article>
+    
+                <article>
+                    <h2>commander en ligne</h2>
+                    <ul>
+                        <li>
+                            <a href="">Première visite</a>
+                        </li>
+                        <li>
+                            <a href="">Aide - FAQ</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <Service client/a>
+                        </li>
+                        <li>
+                            <a href="">Suivre ma commande</a>
+                        </li>
+                        <li>
+                            <a href="">Conditions générales de vente</a>
+                        </li>
+                    </ul>
+                </article>
+    
+                <article>
+                    <h2>suivez-nous !</h2>
+                    <ul>
+                        <li>
+                            <a href="">Notre histoire</a>
+                        </li>
+                        <li>
+                            <a href="">Nos boutiques</a>
+                        </li>
+                        <li>
+                            <a href="">Le thé de A à Z</a>
+                        </li>
+                        <li>
+                            <a href="">Espace clients professionnels</a>
+                        </li>
+                    </ul>
+                </article>
+    
+            </section>
+    
+        </footer>
+    </body>
+    
+    </html>
